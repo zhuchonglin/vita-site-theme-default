@@ -21,7 +21,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "pnpm test && rimraf dist && tsc -p tsconfig.build.json",
+    "build": "pnpm test && rimraf dist && tsc -p tsconfig.build.json && cp -r src/assets ./dist/",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "release": "npx change-push"
