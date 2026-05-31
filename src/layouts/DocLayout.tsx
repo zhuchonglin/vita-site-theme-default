@@ -1,8 +1,8 @@
 import { type View } from 'vitarx'
 import { RouterView } from 'vitarx-router'
-import DocFooter from '../components/DocFooter.js'
-import DocSidebar from '../components/DocSidebar.js'
-import SideBarButton from '../components/SideBarButton.js'
+import DocFooter from '../components/DocFooter.jsx'
+import DocSidebar from '../components/DocSidebar.jsx'
+import SideBarButton from '../components/SideBarButton.jsx'
 import { useSidebarState } from '../shared/menu.js'
 import '../assets/styles/layout.scss'
 

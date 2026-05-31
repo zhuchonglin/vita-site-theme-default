@@ -1,8 +1,8 @@
 import { useI18n } from 'vita-site'
 import { type View } from 'vitarx'
 import { useTheme } from '../shared/theme.js'
-import Moon from './icons/Moon.js'
-import Sun from './icons/Sun.js'
+import Moon from './icons/Moon.jsx'
+import Sun from './icons/Sun.jsx'
 
 function ThemeSwitch(): View {
   const theme = useTheme()

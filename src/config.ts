@@ -1,7 +1,7 @@
 import { definePluginClientConfig } from 'vita-site'
 import { createMissingRoute } from 'vitarx-router'
-import NotFoundPage from './components/404.js'
-import GlobalLayout from './layouts/GlobalLayout.js'
+import NotFoundPage from './components/404.jsx'
+import GlobalLayout from './layouts/GlobalLayout.jsx'
 
 export default definePluginClientConfig({
   // 配置全局布局

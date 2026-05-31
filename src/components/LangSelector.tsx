@@ -1,7 +1,7 @@
 import type { Locale } from 'vita-site'
 import { useI18n } from 'vita-site'
 import { For, onHide, shallowRef, Teleport, Transition, type View, watch } from 'vitarx'
-import Translation from './icons/Translation.js'
+import Translation from './icons/Translation.jsx'
 import '../assets/styles/lang.scss'
 
 let id = 0

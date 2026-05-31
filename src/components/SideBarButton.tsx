@@ -1,5 +1,5 @@
 import { useSidebarState } from '../shared/menu.js'
-import Menu from './icons/Menu.js'
+import Menu from './icons/Menu.jsx'
 
 export default function SideBarButton() {
   const state = useSidebarState()
