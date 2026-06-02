@@ -155,3 +155,27 @@ html[data-browser='not-webkit'] {
     }
   }
 }
+
+
+html[data-browser='webkit'] {
+  /* 修改滚动条的整体样式 */
+  &::-webkit-scrollbar {
+    width: 6px; /* 滚动条的宽度 */
+  }
+
+  /* 修改滚动条的轨道样式 */
+  &::-webkit-scrollbar-track {
+    background: var(--color-surface-container-lowest); /* 轨道的背景颜色 */
+  }
+
+  /* 修改滚动条的滑块样式 */
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-surface-container-high); /* 滑块的背景颜色 */
+    border-radius: 6px; /* 滑块的圆角 */
+  }
+}
+
+html[data-browser='not-webkit'] {
+  /* 非webkit浏览器 */
+  scrollbar-width: none;
+}
