@@ -1,9 +1,11 @@
-# [1.0.0-alpha.2](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2026-06-02)
+# [1.0.0-alpha.3](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2026-06-02)
 
 
 ### Bug Fixes
 
 * **styles:** 修复侧边栏布局溢出问题 ([d99d32c](https://gitee.com/zhuchonglin/vita-site-theme-default/commits/d99d32c13c5c73fd9c244ec34acfdf77c10176d2))
+
+# [1.0.0-alpha.1](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.0...v1.0.0-alpha.1) (2026-05-31)
 
 
 ### Features
