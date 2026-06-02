@@ -194,6 +194,7 @@
     border-collapse: collapse;
     margin: calc(var(--margin)) 0;
     border-radius: 4px;
+    overflow: hidden;
   }
 
   th,
@@ -303,4 +304,18 @@ html[data-theme='dark'] .shiki code span {
 html[data-theme='light'] .shiki,
 html[data-theme='light'] .shiki code span {
   color: var(--shiki-light);
+}
+
+/* 确保表格在小屏幕上也能正常滚动 */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
 }
