@@ -40,8 +40,8 @@ export default function DocSidebar(): View {
               <RouterLink class="toc-list__link" to={`#${toc.hash}`}>
                 {toc.name}
               </RouterLink>
-              <ul v-if={toc.children && toc.children.length} class="toc-list">
-                <For each={toc.children} key={child => child.hash + child.name}>
+              <ul v-if={toc.children?.length} class="toc-list">
+                <For each={toc.children!} key={child => child.hash + child.name}>
                   {child => (
                     <li class="toc-list__item">
                       <RouterLink class="toc-list__link" to={`#${child.hash}`}>
