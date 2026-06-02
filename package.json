@@ -32,14 +32,14 @@
   },
   "dependencies": {
     "@vita-site/plugin-container": "^1.0.0-alpha.0",
-    "@vita-site/plugin-search": "^1.0.0-alpha.1",
+    "@vita-site/plugin-search": "^1.0.0-alpha.2",
     "@zmaui/color": "^1.0.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.1",
     "markdown-it": "^14.1.1",
     "sass-embedded": "1.70.0",
-    "vita-site": "^1.0.0-alpha.0",
+    "vita-site": "^1.0.2",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
@@ -53,6 +53,6 @@
     "vitest": "^4.1.4",
     "vitarx": "4.0.0",
     "@vitarx/plugin-vite": "1.0.0",
-    "vitarx-router": "4.0.0"
+    "vitarx-router": "4.0.3"
   }
 }
