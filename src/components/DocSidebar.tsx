@@ -37,14 +37,14 @@ export default function DocSidebar(): View {
         <For each={tocList} key={toc => toc.hash + toc.name}>
           {toc => (
             <li class="toc-list__item">
-              <RouterLink class="toc-list__link" to={`#${toc.hash}`}>
+              <RouterLink class="toc-list__link" to={`#${toc.hash ?? toc.name}`}>
                 {toc.name}
               </RouterLink>
               <ul v-if={toc.children?.length} class="toc-list">
                 <For each={toc.children!} key={child => child.hash + child.name}>
                   {child => (
                     <li class="toc-list__item">
-                      <RouterLink class="toc-list__link" to={`#${child.hash}`}>
+                      <RouterLink class="toc-list__link" to={`#${child.hash ?? child.name}`}>
                         {child.name}
                       </RouterLink>
                     </li>
