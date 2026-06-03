@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "vita-site": "^1.0.0-0"
+    "vita-site": "^1.0.0"
   },
   "dependencies": {
     "@vita-site/plugin-container": "^1.0.0-alpha.0",
