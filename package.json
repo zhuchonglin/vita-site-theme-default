@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@vita-site/plugin-container": "^1.0.0-alpha.0",
-    "@vita-site/plugin-search": "^1.0.0-alpha.2",
+    "@vita-site/plugin-search": "^1.0.0-alpha.3",
     "@zmaui/color": "^1.0.0"
   },
   "devDependencies": {
