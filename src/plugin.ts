@@ -1,5 +1,5 @@
 import { containerPlugin } from '@vita-site/plugin-container'
-import searchPlugin from '@vita-site/plugin-search/server'
+import searchPlugin, { type SearchPluginOptions } from '@vita-site/plugin-search/server'
 import { type AnyColor, createScheme, generateCSS, type SchemeOptions } from '@zmaui/color'
 import { existsSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
@@ -23,6 +23,10 @@ export interface DefaultThemeOptions extends SiteOptions {
    * @default true
    */
   useContainer?: boolean
+  /**
+   * 搜索插件选项
+   */
+  searchOptions?: SearchPluginOptions
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -49,7 +53,7 @@ const HOME_PATH = existsSync(resolve(__dirname, 'pages/Home.jsx'))
  * @param options
  */
 export function defaultTheme(options: DefaultThemeOptions): VitaSitePlugin {
-  const { color, schemeOptions, useContainer = true } = options
+  const { color, schemeOptions, useContainer = true, searchOptions } = options
   const scheme = createScheme(color, schemeOptions).schemes
   const colorCssContent = generateCSS(scheme, 'data-theme').join('\n')
   const siteData: SiteData = {
@@ -74,7 +78,7 @@ export function defaultTheme(options: DefaultThemeOptions): VitaSitePlugin {
         plugins.push(containerPlugin())
       }
       if (siteData.useSearch) {
-        plugins.push(searchPlugin())
+        plugins.push(searchPlugin(searchOptions))
       }
       return defineConfig({
         plugins,
