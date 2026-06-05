@@ -4,13 +4,14 @@
   --sidebar-width: 272px;
 
   .doc-container {
-    transition: transform 0.3s ease-in-out,
+    transition: margin-left 0.3s ease-in-out,
     width 0.3s ease-in-out;
     animation: fadeIn 0.8s ease-out;
     @include common.for-pc {
       padding: 24px 48px 24px 48px;
+      max-width: 1200px;
       width: calc(100% - var(--sidebar-width));
-      transform: translateX(var(--sidebar-width));
+      margin-left: max(var(--sidebar-width), calc(var(--sidebar-width) + (100% - var(--sidebar-width) - 1200px) / 2));
     }
     @include common.for-phone {
       padding: 64px 32px 24px 32px;
@@ -196,7 +197,7 @@
         transform: translateX(-100%);
       }
       .doc-container {
-        transform: translateX(0);
+        margin-left: max(0px, calc((100% - 1200px) / 2));
         width: 100%;
       }
     }
