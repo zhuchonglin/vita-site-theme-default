@@ -7,6 +7,7 @@
     transition: margin-left 0.3s ease-in-out,
     width 0.3s ease-in-out;
     animation: fadeIn 0.8s ease-out;
+    overflow-x: hidden;
     @include common.for-pc {
       padding: 24px 48px 24px 48px;
       max-width: 1200px;
