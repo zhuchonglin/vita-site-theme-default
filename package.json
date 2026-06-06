@@ -28,12 +28,12 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "vita-site": "^1.0.0"
+    "vita-site": "^1.0.0-0"
   },
   "dependencies": {
-    "@vita-site/plugin-container": "^1.0.0-alpha.0",
-    "@vita-site/plugin-search": "^1.0.0-alpha.3",
-    "@zmaui/color": "^1.0.0"
+    "@zmaui/color": "^1.0.0",
+    "@vita-site/plugin-container": "^1.0.0",
+    "@vita-site/plugin-search": "^1.0.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.1.1",
