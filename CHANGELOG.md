@@ -1,14 +1,17 @@
-# [1.0.0-alpha.5](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2026-06-05)
+# [1.0.0](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.5...v1.0.0) (2026-06-06)
+
+
+### Features
+
+* **doc:** 增加代码复制到剪贴板功能 ([76ad287](https://gitee.com/zhuchonglin/vita-site-theme-default/commits/76ad2878f9ace1250e1df26a80c912169f8a6cbd))
+* **plugin:** 添加搜索插件的配置选项 ([52bd618](https://gitee.com/zhuchonglin/vita-site-theme-default/commits/52bd61883bdc25c4b75a92950b628ddc8b17b12d))
+
+# [1.0.0-alpha.4](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2026-06-03)
 
 
 ### Bug Fixes
 
 * **docSidebar:** 优化锚点链接的回退逻辑 ([c2fc497](https://gitee.com/zhuchonglin/vita-site-theme-default/commits/c2fc49767ccdbcab2d76c1a269896d087e1759fb))
-
-
-### Features
-
-* **plugin:** 添加搜索插件的配置选项 ([52bd618](https://gitee.com/zhuchonglin/vita-site-theme-default/commits/52bd61883bdc25c4b75a92950b628ddc8b17b12d))
 
 # [1.0.0-alpha.3](https://gitee.com/zhuchonglin/vita-site-theme-default/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2026-06-02)
 
