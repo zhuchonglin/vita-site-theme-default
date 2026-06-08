@@ -1,7 +1,7 @@
 import type { NavEntry, NavGroup, NavItem, TocTree } from 'vita-site'
 import { onNavTreeChange, useI18n, useNavTree } from 'vita-site'
 import { computed, debounce, For, isArray, onHide, onShow, type View, watch } from 'vitarx'
-import { isPathExactMatch, isPathPrefixMatch, RouterLink, useRoute, useRouter } from 'vitarx-router'
+import { isPathExactMatch, RouterLink, useRoute, useRouter } from 'vitarx-router'
 import { useSidebarState } from '../shared/menu.js'
 
 export default function DocSidebar(): View {
@@ -25,7 +25,7 @@ export default function DocSidebar(): View {
   }
 
   function getRoutePath(nav: NavEntry) {
-    return nav.type === 'group' ? nav.indexPath || nav.path : nav.path
+    return nav.type === 'group' ? nav.indexPath || 'javascript:void(0)' : nav.path
   }
 
   function buildTocList(nav: NavItem): View | null {
@@ -56,13 +56,6 @@ export default function DocSidebar(): View {
         </For>
       </ul>
     )
-  }
-
-  function matchPath(item: NavEntry): boolean {
-    if (item.type === 'group') {
-      return isPathPrefixMatch(router.route.path, item.path)
-    }
-    return isPathExactMatch(router.route.path, item.path)
   }
 
   function updateActiveToc(hash: string): void {
@@ -134,16 +127,9 @@ export default function DocSidebar(): View {
         <For each={menuList.value} key={item => item.path + item.title}>
           {item => (
             <li class="nav-list__item">
-              <a
-                class={['nav-list__link', matchPath(item) ? 'active' : '']}
-                href={router.buildUrl(getRoutePath(item))}
-                onClick={e => {
-                  e.preventDefault()
-                  router.push(getRoutePath(item))
-                }}
-              >
+              <RouterLink class="nav-list__link" to={getRoutePath(item)} exactActiveClass="active">
                 {item.title}
-              </a>
+              </RouterLink>
               {item.type === 'group' ? (
                 <ul class="nav-list__sub">
                   <For<NavItem>
