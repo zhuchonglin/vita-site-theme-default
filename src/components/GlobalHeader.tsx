@@ -83,7 +83,7 @@ function GlobalHeader(): View {
           <RouterLink
             v-if={siteData.libLink}
             class="default-theme-action-btn"
-            to={siteData.libLink}
+            to={siteData.libLink!}
             target="_blank"
           >
             <IconGithub />
