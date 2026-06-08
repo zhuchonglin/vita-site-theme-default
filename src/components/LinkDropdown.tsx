@@ -77,7 +77,6 @@ export default function LinkDropdown(props: LinkDropdownProps): View {
               <svg
                 v-if={option.isExternal}
                 class="external-link-icon"
-                color="currentColor"
                 viewBox="0 0 1024 1024"
                 role="img"
               >
