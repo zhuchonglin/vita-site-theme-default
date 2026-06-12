@@ -39,7 +39,7 @@
     "@types/markdown-it": "^14.1.1",
     "markdown-it": "^14.1.1",
     "sass-embedded": "1.70.0",
-    "vita-site": "^1.0.2",
+    "vita-site": "^1.0.4",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@commitlint/types": "^20.5.0",
@@ -51,8 +51,8 @@
     "typescript": "^6.0.2",
     "vite": "^8.0.8",
     "vitest": "^4.1.4",
-    "vitarx": "4.0.0",
-    "@vitarx/plugin-vite": "1.0.0",
-    "vitarx-router": "4.0.3"
+    "vitarx": "4.0.2",
+    "@vitarx/plugin-vite": "1.0.2",
+    "vitarx-router": "4.0.5"
   }
 }
