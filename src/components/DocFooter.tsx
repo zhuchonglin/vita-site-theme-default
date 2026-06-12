@@ -14,7 +14,7 @@ export default function DocFooter(): View {
     return null
   })
   const lastUpdateAt = computed(() => {
-    return route.meta['lastUpdateAt'] || ''
+    return (route.meta['lastUpdateAt'] as string) || ''
   })
   const pagination = computed((): Pagination => {
     return route.meta['pagination'] || { prev: null, next: null }
@@ -41,10 +41,10 @@ export default function DocFooter(): View {
             ></path>
           </svg>
           最后更新时间：
-          <time datatime={lastUpdateAt}>{lastUpdateAt}</time>
+          <time dateTime={lastUpdateAt}>{lastUpdateAt}</time>
         </dd>
         <dd v-if={editLink}>
-          <a href={editLink.value as string} target="_blank">
+          <a href={editLink.value!} target="_blank">
             <svg
               width="14px"
               height="14px"
